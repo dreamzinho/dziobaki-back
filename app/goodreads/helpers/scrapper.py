@@ -2,6 +2,7 @@ from flask import Blueprint, url_for, jsonify, make_response, request
 import requests
 import json
 
+
 def get_movie_by_title(title):
     pass
 
@@ -16,6 +17,6 @@ def get_book_reviews(title, limit='20', offset='0'):
                        headers=headers)
     print(res)
 
+
 if __name__ == '__main__':
     get_book_reviews('Harry Potter')
-
